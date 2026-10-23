@@ -1,0 +1,4 @@
+baseURL = 'https://yuchuancz.github.io/'
+locale = 'zh-cn'
+title = '雨川的 BLOG'
+theme = 'ananke'

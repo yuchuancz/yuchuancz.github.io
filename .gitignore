@@ -1,0 +1,13 @@
+# Hugo 生成的网站文件
+/public/
+
+# 操作系统文件
+Thumbs.db
+.DS_Store
+
+# 编辑器配置（按需保留）
+.vscode/
+
+# Obsidian 本地配置和回收站
+.obsidian/
+.trash/
