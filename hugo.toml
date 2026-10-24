@@ -1,4 +1,76 @@
 baseURL = 'https://yuchuancz.github.io/'
-locale = 'zh-cn'
 title = '雨川的 BLOG'
-theme = 'ananke'
+author = '雨川'
+locale = 'zh-cn'
+DefaultContentLanguage = 'zh-cn'
+theme = 'Blonde'
+enableRobotsTXT = true
+hasCJKLanguage = true
+
+[params]
+  description = '雨川的个人博客'
+  base_color = 'bg-gray-800'
+  paginator_pages = 5
+  archive_dropdown = 'false'
+  tagsLimit = 20
+  recentLimit = 5
+  darkmode = 'dark'
+
+  [params.post]
+    thumbnail = true
+    noimage = true
+    thumbnail_height = 'lg:h-44'
+    thumbnail_width = 'lg:w-auto'
+    description = '130'
+
+  [params.widgets]
+    display = true
+    mobile = true
+    widgets = ['search', 'archive', 'category', 'tags', 'recent']
+    # widgets = ["pagefind"]
+
+  [params.share]
+    enable = false
+
+[menu]
+  [[menu.main]]
+    identifier = 'home'
+    name = '首页'
+    url = '/'
+    weight = 1
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+  archive = 'archives'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+  [build.buildStats]
+    enable = true
+
+  [[build.cachebusters]]
+    source = 'assets/notwatching/hugo_stats\.json'
+    target = 'css'
+
+  [[build.cachebusters]]
+    source = '(postcss|tailwind)\.config\.js'
+    target = 'css'
+
+[module]
+  [[module.mounts]]
+    source = 'assets'
+    target = 'assets'
+
+  [[module.mounts]]
+    disableWatch = true
+    source = 'hugo_stats.json'
+    target = 'assets/notwatching/hugo_stats.json'
+
+[security]
+  [security.exec]
+    allow = ['^(dart-)?sass$', '^go$', '^git$', '^node$', '^postcss$', '^tailwindcss$']

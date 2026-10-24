@@ -6,7 +6,7 @@ modified: 2026-10-23 13:41:41
 首先介绍下平台及需要的软件。
 在windows系统上进行软件的安装与配置。所使用软件有Hugo和git，网页端使用GitHub。
 
-首先安装Hugo，网址是 https://hugo.opendocs.io/installation/windows/ ，选择拓展版安装。注意此时不需要下载 Hugo。
+首先安装Hugo，网址是 https://hugo.opendocs.io/installation/windows/ ，选择拓展版安装。注意：此时无需下载 Hugo。
 ![](attachments/file-20261024174134505.png)
 
 有三种安装方式，选择包管理器安装方法：
@@ -14,7 +14,7 @@ modified: 2026-10-23 13:41:41
 
 网站上展示了三种包管理器，我们使用 WinGet 进行安装，因为这是win 10 系统自带的，只要有Microsoft Store 就有 WinGet。![](attachments/file-20261024174134666.png)
 
-在终端中选择 Windows PowerShell，使用 `winget --version` 查看 WinGet版本，确认有WinGet后。使用 `winget install Hugo.Hugo.Extended` 安装 Hugo 拓展版。
+在终端中选择 Windows PowerShell，使用 `winget --version` 查看 WinGet版本，确认有WinGet后。使用 `winget install Hugo.Hugo.Extended` 命令安装 Hugo 拓展版。
 ![](attachments/file-20261024174134849.png)
 
 输入 `hugo version` 查看 hugo 是否安装好，`hugo -h` 查看使用帮助。
