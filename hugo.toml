@@ -26,8 +26,8 @@ hasCJKLanguage = true
   [params.widgets]
     display = true
     mobile = true
-    widgets = ['search', 'archive', 'category', 'tags', 'recent']
-    # widgets = ["pagefind"]
+    widgets = ['archive', 'category', 'tags', 'recent']
+    # widgets = ['search', 'pagefind']
 
   [params.share]
     enable = false
