@@ -6,6 +6,15 @@ DefaultContentLanguage = 'zh-cn'
 theme = 'Blonde'
 enableRobotsTXT = true
 hasCJKLanguage = true
+timeZone = 'Asia/Shanghai'
+
+# date = ['created']	将创建时间作为文章日期，供 .Date 使用
+# publishDate = ['created']	将创建时间作为发布时间，避免 Hugo 根据其他日期字段判断是否允许发布
+# lastmod = ['lastmod']	将修改时间映射到 .Lastmod
+[frontmatter]
+  date = ['created']
+  publishDate = ['created']
+  lastmod = ['lastmod']
 
 [params]
   description = '雨川的个人博客'

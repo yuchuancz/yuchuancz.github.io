@@ -1,7 +1,12 @@
 ---
-title: 使用 Hugo + GitHub Pages 进行个人博客网站配置
+author: "Adrian Guo"
+title: "使用 Hugo + GitHub Pages 进行个人博客网站配置"
 created: 2026-10-23 13:53:18
-lastmod: 2026-10-25 18:02:36
+lastmod: 2026-10-27 08:21:11
+slug: "Hugo-GitHub-Pages-deploy"
+tags: ["网页"]
+categories: ["工具"]
+archives: ["2026/10"]
 ---
 ## 首先介绍安装平台及需要的软件
 在windows系统上进行个人博客网站的配置。需下载的软件有 Hugo 和 git，网页端使用 GitHub。
